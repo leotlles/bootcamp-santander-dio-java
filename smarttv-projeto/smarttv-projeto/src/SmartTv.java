@@ -1,11 +1,11 @@
-public class Fodase {
+public class SmartTv {
     //atributos
-private boolean ligada;
-private int volume;
-private int canal;
+    private boolean ligada;
+    private int volume;
+    private int canal;
 
     //metodos
-    public Fodase(){
+    public SmartTv(){
         this.ligada = false;
         this.volume = 50;
         this.canal = 4;
@@ -79,20 +79,4 @@ private int canal;
     public int getVolume(){
         return volume;
     }
-
-    // método main
-    public static void main(String[] args) {
-        Fodase minhaTV = new Fodase();
-        // chamada do método: TV ligada?
-        minhaTV.ligar();
-        System.out.println("A TV está ligada? " + minhaTV.taLigada());
-
-        // canal
-        minhaTV.proximoCanal();
-        System.out.println("Estamos no canal " + minhaTV.qualCanal());
-
-        // volume
-        minhaTV.aumentarVolume();
-        System.out.println("Estamos no volume " + minhaTV.getVolume());
-}
 }
